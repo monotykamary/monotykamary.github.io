@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-22.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          submodules: true
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.2
