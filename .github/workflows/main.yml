@@ -1,4 +1,4 @@
-name: Deploy blog from Obsidian
+name: Build Link Index from Obsidian notes
 
 on:
   push:
@@ -6,11 +6,13 @@ on:
       - main
 
 jobs:
-  publish_job:
+  deploy:
     runs-on: ubuntu-latest
-    name: Publish Obsidian notes to Github pages
     steps:
-      - uses: haxrob/obsidian-to-hugo-pages@main
+      - uses: actions/checkout@v2
+      - name: Build Link Index
+        uses: jackyzha0/hugo-obsidian@v2.1
         with:
-          vault-path: vault
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          input: vault
+          output: data
+          index: true
