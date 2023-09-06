@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish Obsidian notes to Github pages
     steps:
-      - uses: haxrob/obsidian-to-hugo-action@main
+      - uses: haxrob/obsidian-to-hugo-pages@main
         with:
           vault-path: vault
           github-token: ${{ secrets.GITHUB_TOKEN }}
