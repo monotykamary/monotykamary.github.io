@@ -1,2 +1,2 @@
-theme = 'hugo-theme-stack'
+theme = 'hugo-book'
 baseURL = 'https://monotykamary.github.io/'
