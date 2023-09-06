@@ -18,7 +18,7 @@ jobs:
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.2
         with:
-          input: vault
+          input: content
           output: assets/indices
           index: true
           root: .
