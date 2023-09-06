@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "43bf6e0f99876ccc",
+        "id": "13d9772b2aad7e56",
         "type": "tabs",
         "children": [
           {
-            "id": "803f0f1fbd08b0e3",
+            "id": "3c613c2bfa2e6221",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "new/Nightmare.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "new/Nightmare.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "new/Nightmare.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "new/Nightmare.md"
+                "file": "index.md"
               }
             }
           },
@@ -184,13 +184,18 @@
       "fantasy-calendar:Open Large Fantasy Calendar": false
     }
   },
-  "active": "803f0f1fbd08b0e3",
+  "active": "3c613c2bfa2e6221",
   "lastOpenFiles": [
-    "References/Monsters (Alt)/Creatures V-Z.md",
+    "References/Spells/## Spell Lists (Wikilinked).md",
+    "References/Spells/Dancing Lights.md",
+    "References/Spells (Alt)/## Spell Lists.md",
+    "References/Monsters (Alt)/# Monster Statistics.md",
+    "index.md",
+    "References/Monsters/Spirit Naga.md",
     "new/Nightmare.md",
+    "References/Monsters (Alt)/Creatures V-Z.md",
     "References/Monsters (Alt)/Creatures M-O.md",
     "References/Monsters (Alt)/Creatures J-L.md",
-    "References/Monsters/Spirit Naga.md",
     "References/Races/Half-Orc.md",
     "new",
     "References/Races/Dragonborn.md",
