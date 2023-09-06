@@ -6,39 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-
+  publish_job:
+    runs-on: ubuntu-latest
+    name: Publish Obsidian notes to Github pages
     steps:
-      - uses: actions/checkout@v2
+      - uses: haxrob/obsidian-to-hugo-pages@main
         with:
-          fetch-depth: 0
-          submodules: true
-
-      - name: Build Link Index
-        uses: jackyzha0/hugo-obsidian@v2.2
-        with:
-          input: content
-          output: assets/indices
-          index: true
-          root: .
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.118.2'
-          extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
-          cname: monotykamary.github.io
+          vault-path: content
+          github-token: ${{ secrets.GITHUB_TOKEN }}
