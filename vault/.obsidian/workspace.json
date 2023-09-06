@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "13d9772b2aad7e56",
+        "id": "33a50f483908afd9",
         "type": "tabs",
         "children": [
           {
-            "id": "3c613c2bfa2e6221",
+            "id": "be4937c946e04344",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,13 +184,14 @@
       "fantasy-calendar:Open Large Fantasy Calendar": false
     }
   },
-  "active": "3c613c2bfa2e6221",
+  "active": "be4937c946e04344",
   "lastOpenFiles": [
-    "References/Spells/## Spell Lists (Wikilinked).md",
     "References/Spells/Dancing Lights.md",
+    "index.md",
+    "References/Spells/Antimagic Field.md",
+    "References/Spells/## Spell Lists (Wikilinked).md",
     "References/Spells (Alt)/## Spell Lists.md",
     "References/Monsters (Alt)/# Monster Statistics.md",
-    "index.md",
     "References/Monsters/Spirit Naga.md",
     "new/Nightmare.md",
     "References/Monsters (Alt)/Creatures V-Z.md",
