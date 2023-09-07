@@ -45,7 +45,7 @@ jobs:
 
       - name: Export Vault
         shell: bash
-        run: obsidian-export ./${{ inputs.vault-path }} ./content/posts
+        run: obsidian-export ./vault ./content/posts
 
       - name: Build Hugo
         shell: bash
