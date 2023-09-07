@@ -35,9 +35,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Create posts dir if not exists
+      - name: Create content dir if not exists
         shell: bash
-        run: mkdir -p ./content/posts
+        run: mkdir -p ./content
 
       - name: Create layout fix directory
         shell: bash
@@ -45,7 +45,7 @@ jobs:
 
       - name: Export Vault
         shell: bash
-        run: obsidian-export ./vault ./content/posts
+        run: obsidian-export ./vault ./content
 
       - name: Build Hugo
         shell: bash
